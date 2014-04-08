@@ -91,3 +91,5 @@ sub SharedFriends {
 	# Return reference otherwise array eval'd in scalar context
 	return \@friends;
 };
+
+true;
