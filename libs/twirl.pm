@@ -12,7 +12,7 @@ our $VERSION = '0.1';
 set serializer => 'Mutable';
 
 # Home page template
-get '/home' => sub {
+get '/' => sub {
 	template 'home';
 };
 
@@ -25,3 +25,5 @@ get '/tweets/:username' => sub {
 get '/friends/:username_1/:username_2' => sub {
 	return Twirl::API::SharedFriends( params->{username_1}, params->{username_2} );
 };
+
+true;
