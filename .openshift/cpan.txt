@@ -1,5 +1,9 @@
 Test::Base
+Test::More
 YAML
 Dancer
 Plack::Handler::Apache2
+JSON::PP
+Redis
+Net::Twitter
 
