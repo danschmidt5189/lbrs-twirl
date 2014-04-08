@@ -1,1 +1,1 @@
-openshift/public/
+twirl/public/
