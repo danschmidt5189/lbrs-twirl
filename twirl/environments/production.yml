@@ -1,0 +1,40 @@
+# configuration file for development environment
+
+# the logger engine to use
+# console: log messages to STDOUT (your console where you started the
+#          application server)
+# file:    log message to a file in log/
+logger: "console"
+
+# the log level for this environment
+# core is the lowest, it shows Dancer's core log messages as well as yours
+# (debug, info, warning and error)
+log: "core"
+
+# web port to listen on
+# port: 80
+
+# should Dancer consider warnings as critical errors?
+warnings: 1
+
+# should Dancer show a stacktrace when an error is caught?
+show_errors: 1
+
+# auto_reload is a development and experimental feature
+# you should enable it by yourself if you want it
+# Module::Refresh is needed
+#
+# Be aware it's unstable and may cause a memory leak.
+# DO NOT EVER USE THIS FEATURE IN PRODUCTION
+# OR TINY KITTENS SHALL DIE WITH LOTS OF SUFFERING
+auto_reload: 0
+
+# Twitter API config
+twitter_consumer_key: "3rTaVDBhnRWT4hiesGEeYGEBP"
+twitter_consumer_secret: "mAADsf30S1pVe1YhwfAIQDMjJkg237cl9JMEh3LLY69fbWAPn3"
+twitter_access_token: "20342122-rYKugIVLH6wBhWaRqLz3vrYPdZCvkpjjvPXaEHoXa"
+twitter_access_token_secret: "gDKBPcUjh033iXzJCuysZw1wfzdIcTbSGHVqXTvCD1qaU"
+
+# Redis client config
+redis_server: "barreleye.redistogo.com:11162"
+redis_password: "c551885f0afec1a9bbed62b12136b2d1"
