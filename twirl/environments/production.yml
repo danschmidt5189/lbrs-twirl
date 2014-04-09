@@ -28,13 +28,3 @@ show_errors: 1
 # DO NOT EVER USE THIS FEATURE IN PRODUCTION
 # OR TINY KITTENS SHALL DIE WITH LOTS OF SUFFERING
 auto_reload: 0
-
-# Twitter API config
-twitter_consumer_key: "3rTaVDBhnRWT4hiesGEeYGEBP"
-twitter_consumer_secret: "mAADsf30S1pVe1YhwfAIQDMjJkg237cl9JMEh3LLY69fbWAPn3"
-twitter_access_token: "20342122-rYKugIVLH6wBhWaRqLz3vrYPdZCvkpjjvPXaEHoXa"
-twitter_access_token_secret: "gDKBPcUjh033iXzJCuysZw1wfzdIcTbSGHVqXTvCD1qaU"
-
-# Redis client config
-redis_server: "barreleye.redistogo.com:11162"
-redis_password: "c551885f0afec1a9bbed62b12136b2d1"
