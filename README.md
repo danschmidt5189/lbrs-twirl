@@ -9,4 +9,4 @@ Check it out at http://twirl-lbrs.rhcloud.com/.
 
 ## NOTE
 
-Both Redis (on RedisToGo) and Twitter are subject to rate limiting. If you receive a "Woops..." error, it's very likely that. The application log can confirm the exact cause.
+Both Redis (on RedisToGo) and Twitter are subject to rate limiting. If you receive a "Woops..." error, rate limiting is the most likely cause. The application log can be used to confirm that.
