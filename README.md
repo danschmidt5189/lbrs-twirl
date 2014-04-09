@@ -1,4 +1,8 @@
 lbrs-twirl
 ==========
 
-A simple Twitter app using Perl.
+Find a Twitter user's recent tweets, or find friends shared by two users.
+
+An exercise using Perl, Dancer, Redis, and the Twitter API.
+
+Check it out at http://twirl-lbrs.rhcloud.com/.
