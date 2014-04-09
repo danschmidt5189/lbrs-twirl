@@ -6,7 +6,7 @@ use Plack::Runner;
 # correctly to the dispatchers, so forcing PSGI and env here
 # is safer.
 set apphandler => 'PSGI';
-set environment => 'production';
+set environment => 'development';
 
 my $psgi = path($ENV{'DOCUMENT_ROOT'}, '..', 'twirl', 'bin', 'app.pl');
 die "Unable to read startup script: $psgi" unless -r $psgi;

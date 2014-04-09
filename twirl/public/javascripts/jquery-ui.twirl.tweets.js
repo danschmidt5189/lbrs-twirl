@@ -31,8 +31,8 @@
                     base._showTweets( tweets );
                 });
 
-                base._request.fail(function (jqXHR, textStatus, errorThrown) {
-                    base._showError( jqXHR.responseText );
+                base._request.fail(function ( res, text, err ) {
+                    base._showError( res.responseText );
                 });
 
                 base._request.always(function () {

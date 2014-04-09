@@ -61,12 +61,16 @@
 
                 req.fail(function ( res, text, err ) {
                     var message;
-                    if ( res.responseJSON.error.match( /redis/gi ) ) {
-                        message = "<strong>Redis Error:</strong> Couldn't connect to redis. Check configuration settings.";
-                    } else if ( res.responseJSON.error.match( /Twitter/gi ) ) {
-                        message = "<strong>Rate Limited:</strong> Twitter wants us to chill out. Try again in a few minutes.";
+                    if ( res.responseJSON ) {
+                        if ( res.responseJSON.error.match( /redis/gi ) ) {
+                            message = "<strong>Redis Error:</strong> Couldn't connect to redis. Check configuration settings.";
+                        } else if ( res.responseJSON.error.match( /Twitter/gi ) ) {
+                            message = "<strong>Rate Limited:</strong> Twitter wants us to chill out. Try again in a few minutes.";
+                        } else {
+                            message = "<strong>Woops...</strong> An error occurred. Try again later.";
+                        }
                     } else {
-                        message = "<strong>Woops...</strong> An error occurred. Try again later."
+                        message = "<strong>Woops...</strong> An error occurred. Try again later.";
                     }
 
                     base._addError( message );
